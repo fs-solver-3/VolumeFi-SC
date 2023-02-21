@@ -1,6 +1,6 @@
-# Boot Camp Bridge Contract
+# VolumeFi Token Contract
 
-This contract based on Custodial Bridge Model and used Hardhat builder.
+This contract is used ERC20 and Hardhat builder.
 
 ## 1. Unit testing method
 
@@ -12,17 +12,10 @@ Open the new tab in termianl and run the following command <br/>
 ## 2. Deploy method
 
 Copy secrets-sample.json and rename secrets.json and fill out the items.<br/>
-privateKey, apiKey, infuraKey, custodialWallet<br/>
+privateKey, apiKey, infuraKey, ALCHEMY_API_KEY<br/>
 
 Run the following command. <br/>
-`npx hardhat run scripts/deploy-BootCampBridge.js`
+`npx hardhat run scripts/deploy-VLFI.js`
 
-For the testnet, add `--network rinkeby`
+For the testnet, add `--network goerli`
 
-# Background
-
-Pre-defined the Chain Id by own convention.<br/>
-Make all the Chain Id to unique `uint8` data type because real Chain Id includes both `uint` and `string`.<br/>
-
-`1` : Solana Chain net.<br/>
-`2` : Ethereum Chain net.<br/>
