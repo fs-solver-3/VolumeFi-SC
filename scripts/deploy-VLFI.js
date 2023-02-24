@@ -1,10 +1,12 @@
 const { ethers, upgrades } = require("hardhat");
 async function main() {
-  const VolumeTokenInstance = await ethers.getContractFactory("VolumeToken");
-  const VolumeTokenContract = await VolumeTokenInstance.deploy();
+  const VolumeFiTokenInstance = await ethers.getContractFactory(
+    "VolumeFiToken"
+  );
+  const VolumeFiTokenContract = await VolumeFiTokenInstance.deploy();
   console.log(
-    "VolumeToken Contract is deployed to:",
-    VolumeTokenContract.address
+    "VolumeFiToken Contract is deployed to:",
+    VolumeFiTokenContract.address
   );
 }
 
